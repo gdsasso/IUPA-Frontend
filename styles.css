@@ -1,3 +1,72 @@
 body {
     background-color: darkgray;
 }
+* {
+    font-family : serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+} 
+
+p {
+    text-align: justify;
+    line-height: 2em;
+}
+
+.posts article, #footer section:first-child {
+/*.posts > article, 
+footer > section:first-child {*/
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #cccccc;
+}
+
+#footer section form textarea:hover,
+#footer section form textarea:focus {
+    cursor: pointer;
+    background-color: #00ff48;
+}
+
+#footer section form input:hover,
+#footer section form input:focus {
+    cursor: pointer;
+    background-color: #00ff48;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+
+#nav li {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255, .5);
+    opacity: 0.6;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posts article {
+    width: 50%;
+    flex: 50%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+
+#footer section form {
+    background-color: rgb(245, 209, 224, .5);
+    width: 50%;
+    margin: 0 auto;
+}
